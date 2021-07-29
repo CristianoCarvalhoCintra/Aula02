@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class DesvioEncadeado {
+public class DesvioEncadeadoElseIf {
 
 	public static void main(String[] args) {
 		/*Uma ONG resolveu prestar um serviço bem diferente: ela oferece vans para buscar pessoas com qualquer tipo de dificuldade de locomoção para poderem votar.
@@ -15,15 +15,14 @@ public class DesvioEncadeado {
 		/*Aqui devemos criar uma solução para realizar as verificações.*/
 		if (idade < 16){
 			System.out.println("Menor de 16 anos, não pode votar nem embarcar");
-		} else {
-			if (idade < 18){
-				System.out.println("Idade de voto opcional. Pode embarcar");
-			}else {
+		} else if (idade < 18){
+			System.out.println("Idade de voto opcional. Pode embarcar");
+		}else {
 				System.out.println("Idade de voto obrigatório. Pode embarcar");
-			}
 		}
+		
 		
 		leitor.close();
 	}
-
 }
+
